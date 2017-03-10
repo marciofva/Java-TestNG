@@ -54,13 +54,10 @@ public abstract class AbstractPage {
 
 	public boolean isElementPresent(By locator) {
 		logger.trace("Check whether Element '" + locator + "' is present in the page - {}.", this.getClass());
-		System.out.println("isElementPresent: " + locator);
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-			System.out.println("true");
 			return true;
 		} catch (Exception e) {
-			System.out.println("false");
 			return false;
 		}
 	}

@@ -79,7 +79,7 @@ public class ConfigTest {
   }
 
   private void moveToSignUpPage() throws Throwable {
-		System.out.println("moveToSignUpPage");
+
 		logger.trace("Test Case: createAccount {}", this.getClass());
 		
 		homeObj = new HomePage(driver);

@@ -18,7 +18,7 @@ public class SignUpTest extends ConfigTest {
 
 	@Test(dataProviderClass = testDataFile.class, dataProvider = "invalidEmails")
 	public void enterInvalidEmail(String emailAddress) {
-		System.out.println("enterInvalidEmail");
+
 		logger.trace("Test Case: enterInvalidEmail {}", this.getClass());
 
 		signUpObj.enterEmailToCreateAccount(emailAddress);
@@ -35,7 +35,7 @@ public class SignUpTest extends ConfigTest {
 
 	@Test(dataProviderClass = testDataFile.class, dataProvider = "validEmails")
 	public void enterValidEmail(String emailAddress) {
-		System.out.println("enterValidEmail");
+
 		logger.trace("Test Case: enterValidEmail {}", this.getClass());
 
 		signUpObj.enterEmailToCreateAccount(emailAddress);
