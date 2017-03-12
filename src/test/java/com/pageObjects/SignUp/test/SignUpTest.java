@@ -12,8 +12,6 @@ import com.pageObjects.CreateAccountPage;
 
 public class SignUpTest extends ConfigTest {
 
-	CreateAccountPage accountObj;
-
 	private static final Logger logger = LoggerFactory.getLogger(SignUpTest.class);
 
 	@Test(dataProviderClass = testDataFile.class, dataProvider = "invalidEmails")
@@ -51,5 +49,6 @@ public class SignUpTest extends ConfigTest {
 		assertTrue("Element \'" + accountObj.getCreateBtn().toString() + "\' not found for "
 				+ accountObj.getClass().getSimpleName(), accountObj.isPresent());
 	}
+	
 
 }

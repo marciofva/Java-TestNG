@@ -2,6 +2,7 @@ package com.configuration.test;
 
 import org.testng.annotations.Parameters;
 
+import com.pageObjects.CreateAccountPage;
 import com.pageObjects.HomePage;
 import com.pageObjects.SignUpPage;
 import com.pageObjects.SignUp.test.SignUpTest;
@@ -27,6 +28,7 @@ public class ConfigTest {
 	
 	protected HomePage homeObj;
 	protected SignUpPage signUpObj;
+	protected CreateAccountPage accountObj;
 	
 	private static final Logger logger = LoggerFactory.getLogger(SignUpTest.class);
   

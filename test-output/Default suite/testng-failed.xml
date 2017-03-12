@@ -2,15 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <parameter name="browser" value="chrome"/>
-  <test name="Default test(failed)">
+  <test name="Create Account Validation(failed)">
     <classes>
-      <class name="com.pageObjects.SignUp.test.SignUpTest">
+      <class name="com.pageObjects.CreateNewAccount.test.CreateNewAccountTest">
         <methods>
           <include name="tearDown"/>
-          <include name="enterInvalidEmail" invocation-numbers="1"/>
+          <include name="ValidateGender_Male" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.pageObjects.SignUp.test.SignUpTest -->
+      </class> <!-- com.pageObjects.CreateNewAccount.test.CreateNewAccountTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Create Account Validation(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

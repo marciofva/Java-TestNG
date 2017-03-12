@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Account suite">
+	<parameter name="browser" value="chrome"></parameter>
+	<test verbose="0" name="Create Account Validation">
+		<classes>
+			<class name="com.pageObjects.CreateNewAccount.test.CreateNewAccountTest" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
