@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SignIn suite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.configuration.test.Listener"/>
+  </listeners>
+  <test name="Sign In Validation(failed)">
+    <classes>
+      <class name="com.pageObjects.SignUp.test.SignUpTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="enterInvalidEmail" invocation-numbers="1 4"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.pageObjects.SignUp.test.SignUpTest -->
+    </classes>
+  </test> <!-- Sign In Validation(failed) -->
+</suite> <!-- Failed suite [SignIn suite] -->

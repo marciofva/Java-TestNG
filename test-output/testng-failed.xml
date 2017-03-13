@@ -10,8 +10,8 @@
       <class name="com.pageObjects.CreateNewAccount.test.CreateNewAccountTest">
         <methods>
           <include name="tearDown"/>
+          <include name="validateFistName" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="validateGender" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.pageObjects.CreateNewAccount.test.CreateNewAccountTest -->
     </classes>

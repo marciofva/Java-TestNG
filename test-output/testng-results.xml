@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[PASSED - validateGender]]>
-    </line>
-    <line>
-      <![CDATA[PASSED - selectGender]]>
-    </line>
-    <line>
-      <![CDATA[PASSED - selectGender]]>
+      <![CDATA[PASSED - validateFistName]]>
     </line>
   </reporter-output>
-  <suite name="Account suite" duration-ms="29575" started-at="2017-03-13T01:23:38Z" finished-at="2017-03-13T01:24:08Z">
+  <suite name="Account suite" duration-ms="10495" started-at="2017-03-13T19:35:45Z" finished-at="2017-03-13T19:35:56Z">
     <groups>
     </groups>
-    <test name="Create Account Validation" duration-ms="29575" started-at="2017-03-13T01:23:38Z" finished-at="2017-03-13T01:24:08Z">
+    <test name="Create Account Validation" duration-ms="10495" started-at="2017-03-13T19:35:45Z" finished-at="2017-03-13T19:35:56Z">
       <class name="com.pageObjects.CreateNewAccount.test.CreateNewAccountTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="setUp" is-config="true" duration-ms="7154" started-at="2017-03-12T20:23:38Z" finished-at="2017-03-12T20:23:45Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@10db82ae]" name="setUp" is-config="true" duration-ms="6134" started-at="2017-03-13T14:35:45Z" finished-at="2017-03-13T14:35:51Z">
           <params>
             <param index="0">
               <value>
@@ -27,89 +21,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateGender(java.lang.String)[pri:1, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="validateGender" duration-ms="2146" started-at="2017-03-12T20:23:45Z" data-provider="ValidateGender" finished-at="2017-03-12T20:23:48Z">
+        <test-method status="PASS" signature="validateFistName(java.lang.String)[pri:3, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@10db82ae]" name="validateFistName" duration-ms="3414" started-at="2017-03-13T14:35:51Z" data-provider="invalidFirstName" finished-at="2017-03-13T14:35:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[matheus@microsoft.com]]>
+                <![CDATA[michelle@google.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[PASSED - validateGender]]>
+              <![CDATA[PASSED - validateFistName]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validateGender -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="tearDown" is-config="true" duration-ms="852" started-at="2017-03-12T20:23:48Z" finished-at="2017-03-12T20:23:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="setUp" is-config="true" duration-ms="7212" started-at="2017-03-12T20:23:48Z" finished-at="2017-03-12T20:23:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectGender(java.lang.String, java.lang.String)[pri:2, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="selectGender" duration-ms="2069" started-at="2017-03-12T20:23:56Z" data-provider="selectGender" finished-at="2017-03-12T20:23:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jose@uol.com.br]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[m]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[PASSED - selectGender]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectGender -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="tearDown" is-config="true" duration-ms="742" started-at="2017-03-12T20:23:58Z" finished-at="2017-03-12T20:23:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="setUp" is-config="true" duration-ms="7044" started-at="2017-03-12T20:23:58Z" finished-at="2017-03-12T20:24:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectGender(java.lang.String, java.lang.String)[pri:2, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="selectGender" duration-ms="1607" started-at="2017-03-12T20:24:06Z" data-provider="selectGender" finished-at="2017-03-12T20:24:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[marcio@uol.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[PASSED - selectGender]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectGender -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@1d76aeea]" name="tearDown" is-config="true" duration-ms="714" started-at="2017-03-12T20:24:07Z" finished-at="2017-03-12T20:24:08Z">
+        </test-method> <!-- validateFistName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pageObjects.CreateNewAccount.test.CreateNewAccountTest@10db82ae]" name="tearDown" is-config="true" duration-ms="916" started-at="2017-03-13T14:35:55Z" finished-at="2017-03-13T14:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

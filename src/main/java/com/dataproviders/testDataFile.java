@@ -49,14 +49,15 @@ public class testDataFile {
 		obj[1][0] = "marcio@uol.com";
 		obj[1][1] = "f";
 		
-		//obj[2][0] = "mick@msn.com";
-		//obj[2][1] = "";
+		return obj;
+	}
+	
+	@DataProvider(name = "invalidFirstName")
+	public static Object[][] invalidFirstName(){
+		Object[][] obj = new Object[1][1];
 		
-		//obj[1][0] = "F";
-		//obj[2][0] = "";
-		//obj[3][0] = " ";
-		//obj[4][0] = "G";
-
+		obj[0][0] = "michelle@google.com";
+		
 		return obj;
 	}
 

@@ -27,13 +27,12 @@ public abstract class AbstractPage {
 		logger.trace("Constructor: {}", this.getClass());
 	}
 
-	// get unique element of page
 	public WebElement getUniqueElement(By selector) {
 
 		try {
 			element = wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
 		} catch (NoSuchElementException e) {
-			System.out.println("error: " + e);
+			logger.error("getUniqueElement: {} " + e, this.getClass());
 		}
 
 		List<WebElement> elements = driver.findElements(selector);
@@ -61,5 +60,4 @@ public abstract class AbstractPage {
 			return false;
 		}
 	}
-
 }
