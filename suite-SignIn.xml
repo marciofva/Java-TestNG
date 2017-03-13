@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="SignIn suite" parallel="false">
 	<parameter name="browser" value="chrome"></parameter>
+	<listeners>
+		<listener class-name="com.configuration.test.Listener"></listener>
+	</listeners>
 	<test verbose="0" name="Sign In Validation">
 		<classes>
 			<class name="com.pageObjects.SignUp.test.SignUpTest" />

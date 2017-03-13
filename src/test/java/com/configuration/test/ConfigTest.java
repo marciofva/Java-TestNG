@@ -19,7 +19,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class ConfigTest {
+public class ConfigTest{
 
 	protected WebDriver driver;
 	private String URL = "http://automationpractice.com/index.php";

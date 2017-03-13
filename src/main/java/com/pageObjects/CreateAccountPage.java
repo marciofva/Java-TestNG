@@ -17,7 +17,7 @@ public class CreateAccountPage extends AbstractPage {
 	// * YOUR PERSONAL INFORMATION *//
 	// **********************************************//
 	// Group of Gender
-	//By genderRadio = By.cssSelector(".radio-inline");
+	// By genderRadio = By.cssSelector(".radio-inline");
 	By genderRadio = By.name("id_gender");
 
 	// Radio "Title" - Ms.
@@ -74,7 +74,6 @@ public class CreateAccountPage extends AbstractPage {
 	}
 
 	public void selectGender(String gender) {
-		System.out.println("selectGender - " + gender);
 
 		switch (gender.toLowerCase()) {
 		case "m":
@@ -101,17 +100,17 @@ public class CreateAccountPage extends AbstractPage {
 		}
 		return element.isSelected();
 	}
-	
-	public int getSizeGender(){
-		return driver.findElements(genderRadio).size();	
+
+	public int getSizeGender() {
+		return driver.findElements(genderRadio).size();
 	}
-	
-	public By getGenderRadioMr(){
+
+	public By getGenderRadioMr() {
 		return genderRadioMr;
 	}
-	
-	public By getGenderRadioMrs(){
+
+	public By getGenderRadioMrs() {
 		return genderRadioMrs;
 	}
-	
+
 }

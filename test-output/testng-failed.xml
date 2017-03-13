@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Account suite]">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.configuration.test.Listener"/>
+  </listeners>
   <test name="Create Account Validation(failed)">
     <classes>
       <class name="com.pageObjects.CreateNewAccount.test.CreateNewAccountTest">

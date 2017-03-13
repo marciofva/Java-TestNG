@@ -17,7 +17,6 @@ public class HomePage extends AbstractPage {
 	}
 
 	public SignUpPage toSignUp() {
-		System.out.println("toSignUp");
 		logger.trace("trace-toSignUp {}.", this.getClass());
 		getUniqueElement(loginMenuBy).click();
 		return new SignUpPage(driver);
