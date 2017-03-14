@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.configuration.test.ConfigTest;
 import com.dataproviders.testDataFile;
-import com.pageObjects.CreateAccountPage;
 
 public class SignUpTest extends ConfigTest {
 
@@ -26,8 +25,6 @@ public class SignUpTest extends ConfigTest {
 
 		signUpObj.toCreateAccount();
 
-		// assertTrue("The alert is not found for email " + emailAddress + " "+
-		// signUpObj.getClass().getSimpleName(),signUpObj.isElementPresent());
 		Assert.assertEquals(signUpObj.getAlertCreateAccount(), "Invalid email address.");
 	}
 
@@ -43,12 +40,8 @@ public class SignUpTest extends ConfigTest {
 
 		accountObj = signUpObj.toCreateAccount();
 
-		// assertTrue("The alert is not found for email " + emailAddress + " "+
-		// signUpObj.getClass().getSimpleName(),signUpObj.isElementPresent());
-
 		assertTrue("Element \'" + accountObj.getCreateBtn().toString() + "\' not found for "
-				+ accountObj.getClass().getSimpleName(), accountObj.isPresent());
+				+ accountObj.getClass().getSimpleName(), accountObj.isPresent_RegisterBtn());
 	}
-	
 
 }

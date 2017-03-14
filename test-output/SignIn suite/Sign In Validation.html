@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 13 10:21:41 CDT 2017</td>
+<td>Started on:</td><td>Tue Mar 14 15:34:56 CDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>111 seconds (111624 ms)</td>
+<tr><td>Total time:</td><td>113 seconds (113411 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -83,17 +83,19 @@ function toggleAllBoxes() {
 FAILED - enterInvalidEmail<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [Invalid email address.] but found [ ]
-	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:31)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369347944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace369347944'><pre>java.lang.AssertionError: expected [Invalid email address.] but found [ ]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:31)
+<td><div><pre>java.lang.AssertionError: Timeout: &apos;Expected condition failed: waiting for visibility of element located by By.id: create_account_error (tried for 15 second(s) with 500 MILLISECONDS interval)  - Element &apos;By.id: create_account_error&apos; not found for SignUpPage
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.pageObjects.AbstractPage.isElementPresent(AbstractPage.java:89)
+	at com.pageObjects.SignUpPage.getAlertCreateAccount(SignUpPage.java:61)
+	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:28)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369347944", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369347944'><pre>java.lang.AssertionError: Timeout: &apos;Expected condition failed: waiting for visibility of element located by By.id: create_account_error (tried for 15 second(s) with 500 MILLISECONDS interval)  - Element &apos;By.id: create_account_error&apos; not found for SignUpPage
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.pageObjects.AbstractPage.isElementPresent(AbstractPage.java:89)
+	at com.pageObjects.SignUpPage.getAlertCreateAccount(SignUpPage.java:61)
+	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -124,24 +126,26 @@ FAILED - enterInvalidEmail<br/>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
 <td title='com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail()'><b>enterInvalidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: lurdes@123.com<br/>
-<a href="#Output-836427078" onClick='toggleBox("Output-836427078", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1322642290" onClick='toggleBox("Output-1322642290", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-836427078" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-836427078">
+<a href="#Output-1322642290" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1322642290">
 FAILED - enterInvalidEmail<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: expected [Invalid email address.] but found [ ]
-	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:31)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace836427078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace836427078'><pre>java.lang.AssertionError: expected [Invalid email address.] but found [ ]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:31)
+<td><div><pre>java.lang.AssertionError: Timeout: &apos;Expected condition failed: waiting for visibility of element located by By.id: create_account_error (tried for 15 second(s) with 500 MILLISECONDS interval)  - Element &apos;By.id: create_account_error&apos; not found for SignUpPage
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.pageObjects.AbstractPage.isElementPresent(AbstractPage.java:89)
+	at com.pageObjects.SignUpPage.getAlertCreateAccount(SignUpPage.java:61)
+	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:28)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1322642290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322642290'><pre>java.lang.AssertionError: Timeout: &apos;Expected condition failed: waiting for visibility of element located by By.id: create_account_error (tried for 15 second(s) with 500 MILLISECONDS interval)  - Element &apos;By.id: create_account_error&apos; not found for SignUpPage
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at com.pageObjects.AbstractPage.isElementPresent(AbstractPage.java:89)
+	at com.pageObjects.SignUpPage.getAlertCreateAccount(SignUpPage.java:61)
+	at com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail(SignUpTest.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -168,7 +172,7 @@ FAILED - enterInvalidEmail<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>15</td>
+<td>16</td>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -180,15 +184,15 @@ FAILED - enterInvalidEmail<br/>
 </tr>
 <tr>
 <td title='com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail()'><b>enterInvalidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: llopda<br/>
-<a href="#Output-392918519" onClick='toggleBox("Output-392918519", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-67749199" onClick='toggleBox("Output-67749199", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-392918519" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-392918519">
+<a href="#Output-67749199" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-67749199">
 PASSED - enterInvalidEmail<br/>
 </div>
 </td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
 <td title='com.pageObjects.SignUp.test.SignUpTest.enterInvalidEmail()'><b>enterInvalidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: @@@<br/>
@@ -216,10 +220,10 @@ PASSED - enterInvalidEmail<br/>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
 <td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: jhon@uol.com<br/>
-<a href="#Output-962944318" onClick='toggleBox("Output-962944318", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-888287133" onClick='toggleBox("Output-888287133", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-962944318" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-962944318">
+<a href="#Output-888287133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-888287133">
 PASSED - enterValidEmail<br/>
 </div>
 </td>
@@ -228,22 +232,10 @@ PASSED - enterValidEmail<br/>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
 <td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: Michael@outlook.com<br/>
-<a href="#Output-564272228" onClick='toggleBox("Output-564272228", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-125844477" onClick='toggleBox("Output-125844477", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-564272228" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-564272228">
-PASSED - enterValidEmail<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
-<tr>
-<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: bruno_soares@test.com<br/>
-<a href="#Output-1908571880" onClick='toggleBox("Output-1908571880", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1908571880" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1908571880">
+<a href="#Output-125844477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-125844477">
 PASSED - enterValidEmail<br/>
 </div>
 </td>
@@ -251,11 +243,11 @@ PASSED - enterValidEmail<br/>
 <td>1</td>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
-<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: vilma12@test.eu<br/>
-<a href="#Output-2038232668" onClick='toggleBox("Output-2038232668", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: bruno_soares@test.com<br/>
+<a href="#Output-1528741718" onClick='toggleBox("Output-1528741718", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2038232668" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2038232668">
+<a href="#Output-1528741718" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1528741718">
 PASSED - enterValidEmail<br/>
 </div>
 </td>
@@ -263,11 +255,23 @@ PASSED - enterValidEmail<br/>
 <td>2</td>
 <td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
 <tr>
-<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: cristian88.r@bol.com<br/>
-<a href="#Output-857394605" onClick='toggleBox("Output-857394605", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: vilma12@test.eu<br/>
+<a href="#Output-834466358" onClick='toggleBox("Output-834466358", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-857394605" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-857394605">
+<a href="#Output-834466358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-834466358">
+PASSED - enterValidEmail<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.pageObjects.SignUp.test.SignUpTest@10db82ae</td></tr>
+<tr>
+<td title='com.pageObjects.SignUp.test.SignUpTest.enterValidEmail()'><b>enterValidEmail</b><br>Test class: com.pageObjects.SignUp.test.SignUpTest<br>Parameters: cristian88.r@bol.com<br/>
+<a href="#Output-1104422581" onClick='toggleBox("Output-1104422581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1104422581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1104422581">
 PASSED - enterValidEmail<br/>
 </div>
 </td>

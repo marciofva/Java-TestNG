@@ -2,9 +2,8 @@ package com.pageObjects.CreateNewAccount.test;
 
 import static org.junit.Assert.assertTrue;
 
-import java.util.List;
 
-import org.openqa.selenium.WebElement;
+import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
@@ -12,8 +11,6 @@ import org.testng.annotations.Test;
 import com.configuration.test.ConfigTest;
 import com.dataproviders.testDataFile;
 import com.pageObjects.SignUp.test.SignUpTest;
-
-import junit.framework.Assert;
 
 public class CreateNewAccountTest extends ConfigTest {
 
@@ -45,10 +42,8 @@ public class CreateNewAccountTest extends ConfigTest {
 		assertTrue("Gender not selected", accountObj.isSelectGender(gender));
 	}
 
-	@Test(enabled = true, priority = 3, dataProviderClass = testDataFile.class, dataProvider = "invalidFirstName")
+	@Test(enabled = false, priority = 3, dataProviderClass = testDataFile.class, dataProvider = "invalidFirstName")
 	public void validateFistName(String emailAddress) throws Throwable {
-		// System.out.println("validateFistName " + emailAddress + " " +
-		// firstName);
 
 		logger.trace("Test Case: validateFistName {}", this.getClass());
 
@@ -68,11 +63,61 @@ public class CreateNewAccountTest extends ConfigTest {
 		 
 		assertTrue("Alert Message 'firstname is required.' is not displayed", found);
 	}
+	
+	@Test(enabled = true, priority = 4, dataProviderClass = testDataFile.class, dataProvider = "enterAllFields")
+	public void enterAllValidFields(String emailAddress, 
+									String gender, 
+									String firstName, 
+									String lastName, 
+									String password,
+									String day, 
+									int month, 
+									String year, 
+									String company, 
+									String address, 
+									String address2, 
+									String city, 
+									String state,
+									String zipCode, 
+									String country, 
+									String information, 
+									String phone, 
+									String mobile, 
+									String alias) {
+		logger.trace("Test Case: enterAllValidFields {}", this.getClass());
+
+		accessAccountPage(emailAddress);
+		
+		accountObj.selectGender(gender);
+		accountObj.enterFirstName(firstName);
+		accountObj.enterLastName(lastName);
+		accountObj.enterPassword(password);
+		accountObj.enterDayBirth(day);
+		accountObj.enterMonthBirth(month);
+		accountObj.enterYearBirth(year);
+		accountObj.selectNewsLetter();
+		accountObj.selectSpecialOffers();
+		accountObj.enterCompany(company);
+		accountObj.enterAddress(address);
+		accountObj.enterAddress2(address2);
+		accountObj.enterCity(city);
+		accountObj.enterState(state);
+		accountObj.enterPostCode(zipCode);
+		accountObj.enterCountry(country);
+		accountObj.enterAdditionInformation(information);
+		accountObj.enterPhone(phone);
+		accountObj.enterMobile(mobile);
+		accountObj.enterAddressAlias(alias);
+		
+		accountObj.clickOn();
+		
+		Assert.assertEquals("Sign out", accountObj.getLogoutMenuBy().getText());
+	}
 
 	public void accessAccountPage(String emailAddress) {
 		signUpObj.enterEmailToCreateAccount(emailAddress);
 		accountObj = signUpObj.toCreateAccount();
 		assertTrue("Element \'" + accountObj.getCreateBtn().toString() + "\' not found for "
-				+ accountObj.getClass().getSimpleName(), accountObj.isPresent());
+				+ accountObj.getClass().getSimpleName(), accountObj.isPresent_RegisterBtn());
 	}
 }

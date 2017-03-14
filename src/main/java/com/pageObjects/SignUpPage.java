@@ -35,8 +35,7 @@ public class SignUpPage extends AbstractPage {
 	}
 
 	public SignUpPage enterEmailToCreateAccount(String email) {
-		driver.findElement(emailAccountCreateFld).clear();
-		driver.findElement(emailAccountCreateFld).sendKeys(email);
+		sendKeys(emailAccountCreateFld, email);
 		return new SignUpPage(driver);
 	}
 
